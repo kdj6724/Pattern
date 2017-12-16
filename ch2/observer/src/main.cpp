@@ -24,5 +24,7 @@ int main(void) {
   statisticsDisplay->Detach();
   weatherData->SetMeasurements(78, 43, 11.4f);
 
+  currendDisplay->Attach();
+  forecastDisplay->Attach();
   return 0;
 }
