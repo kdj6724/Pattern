@@ -1,12 +1,10 @@
 #ifndef BEHAVIOR_H_
 #define BEHAVIOR_H_
 #include <iostream>
-
 class FlyBehavior {
 public:
   virtual void Fly() = 0;
 };
-
 class FlyWithWings : public FlyBehavior {
 public:
   virtual void Fly() {
@@ -32,7 +30,6 @@ class QuackBehavior {
 public:
   virtual void Quack() = 0;
 };
-
 class MuteQuack : public QuackBehavior {
   virtual void Quack() {
     std::cout << "<< Silence >>" << std::endl;
